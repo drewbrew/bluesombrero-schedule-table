@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Location</th>
+                <th scope="col">Opponent</th>
+                <th scope="col">Jersey color</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for game in games %}
+            <tr class="{% if game.home_team == my_team %}home-game{% else %}away-game{% endif %}">
+                <td>{{ game.start.strftime('%a %b %-d') }}</td>
+                <td>{{ game.start.strftime('%-I:%M %p') }}</td>
+                <td>{{ game.location }}</td>
+                <td>{% if game.home_team == my_team %}{{ game.visiting_team }}{% else %}{{ game.home_team }}{% endif %}</td>
+                <td>{% if game.home_team == my_team %}{{ home_color_name }}{% else %}{{ away_color_name }}{% endif %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

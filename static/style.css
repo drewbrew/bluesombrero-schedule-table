@@ -1,0 +1,64 @@
+h1 {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+form {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+table {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid black;
+  text-align: left;
+}
+
+/* date */
+thead th:nth-child(1) {
+  width: 10%;
+}
+
+/* time */
+thead th:nth-child(2) {
+  width: 10%;
+}
+
+/* location */
+thead th:nth-child(3) {
+  width: 20%;
+}
+
+/* opponent */
+thead th:nth-child(4) {
+  width: 30%;
+}
+
+/* jersey color */
+thead th:nth-child(5) {
+  width: 10%;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+tr.home-game {
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+}
+
+tr.away-game {
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
