@@ -51,6 +51,10 @@ td {
   padding: 20px;
 }
 
+/* Change blue and red to your team's colors.
+Please make sure to keep visual accessibility in mind as well as possible.
+*/
+
 tr.home-game {
     background-color: blue;
     color: white;

@@ -12,9 +12,6 @@ import requests
 
 HOME_TEAM_COLOR = "blue"
 AWAY_TEAM_COLOR = "red"
-# going with darker colors for white text readability
-HOME_TEAM_HTML = "#000077"
-AWAY_TEAM_HTML = "#770000"
 
 TIME_ZONE = zoneinfo.ZoneInfo('America/Chicago')
 
@@ -109,7 +106,5 @@ def main():
         games=games,
         my_team=my_team,
         home_color_name=HOME_TEAM_COLOR,
-        home_color_hex=HOME_TEAM_HTML,
         away_color_name=AWAY_TEAM_COLOR,
-        away_color_hex=AWAY_TEAM_HTML,
     )
