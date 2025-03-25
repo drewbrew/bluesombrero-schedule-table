@@ -3,7 +3,7 @@
 from collections import Counter
 import datetime
 from dataclasses import dataclass
-from typing import Iterable
+from collections.abc import Iterable
 import zoneinfo
 
 from flask import Flask, render_template, request, abort
@@ -44,7 +44,7 @@ class Game:
         home_team = ""
         visiting_team = ""
         if " Vs " in summary:
-            home_team, visiting_team = [i.strip() for i in summary.split(" Vs ")]
+            home_team, visiting_team = (i.strip() for i in summary.split(" Vs "))
         return cls(
             title=summary,
             start=start.astimezone(TIME_ZONE),

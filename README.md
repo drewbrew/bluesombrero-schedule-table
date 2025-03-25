@@ -7,7 +7,7 @@ If your local soccer team uses Blue Sombrero/Stack Sports/Stack Connect/etc. for
 However, I've found that some parents don't like relying on their phones for everything and like to have a more at-a-glance view. This enables you generate a quick and easy table setup to send to your team as a coach or team parent.
 
 ## How do I use this?
-1. [Install Python 3.12](https://wsvincent.com/install-python/). Will's guide is a great resource for any computer.
+1. [Install Python 3.13](https://wsvincent.com/install-python/). Will's guide is a great resource for any computer.
 2. Install [pipenv](https://pipenv.pypa.io/en/latest/installation.html).  This is what I use for dependency management, and since this is an extremely simple app, it always makes sure you get the latest and greatest.
 3. From a command prompt/terminal in this directory, run `pipenv run flask run`. (Yes, the use of `run` twice is intentional).
 4. You'll see a warning that this is not for production use (good) and  then `* Running on http://127.0.0.1:5000`. Yay!
