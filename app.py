@@ -1,4 +1,5 @@
 """Simple app for rendering a game schedule into a table form"""
+
 from collections import Counter
 import datetime
 from dataclasses import dataclass
@@ -13,7 +14,7 @@ import requests
 HOME_TEAM_COLOR = "blue"
 AWAY_TEAM_COLOR = "red"
 
-TIME_ZONE = zoneinfo.ZoneInfo('America/Chicago')
+TIME_ZONE = zoneinfo.ZoneInfo("America/Chicago")
 
 
 app = Flask(__name__)
